@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>latihan block layout</title>
+    <style>
+ 
+      html, body {
+        min-height: 100%;
+        min-width: 100%;
+        margin: 0;
+      }
+ 
+      .row {
+        margin: 0 10px;
+      }
+ 
+      
+      .column-1 {
+        float: left;
+        width: 100%;
+        height: 100px;
+        background-color: #affad1;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+ 
+      .column-2-side {
+        float: left;
+        min-width: 32.7%;
+        width: fit-content;
+        height: 200px;
+        background-color: #8dcfff;
+        margin: 0 0 10px 0;
+      }
+ 
+      .column-2-mid {
+        float: left;
+        min-width: 33%;
+        width: fit-content;
+        height: 100px;
+        background-color: #8dcfff;
+        margin: 100px 10px 10px 10px;
+      }
+ 
+      .column-3 {
+        float: left;
+        min-width: 18.8%;
+        height: 265px;
+        background-color: #2DAAE3;
+        margin: 0 10px;
+        margin-bottom: 10px;
+      }
+ 
+      .column-3-left {
+        float: left;
+        min-width: 18.8%;
+        height: 265px;
+        background-color: #2DAAE3;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+ 
+      .column-3-right {
+        float: left;
+        min-width: 18.8%;
+        height: 265px;
+        background-color: #2DAAE3;
+        margin-left: 9px;
+        margin-bottom: 10px;
+      }
+ 
+      .column-4-side {  
+        background-color: #D4C0FD;
+        height: 200px;
+      }
+ 
+      .column-4-center {  
+        background-color: #DE89FE;
+        height: 100px;
+      }
+      
+    </style>
+  </head>
+ 
+  <body>
+    <div class="row">
+      <div class="column-1"></div>
+    </div>
+    <div class="row">
+      <div class="column-2-side"></div>
+      <div class="column-2-mid"></div>
+      <div class="column-2-side"></div>
+    </div>
+    <div class="row">
+      <div class="column-3-left"></div>
+      <div class="column-3"></div>
+      <div class="column-3"></div>
+      <div class="column-3"></div>
+      <div class="column-3-right"></div>
+    </div>
+    <div class="row">
+      <div class="column-3-left"></div>
+      <div class="column-3 column-4-side"></div>
+      <div class="column-3 column-4-center"></div>
+      <div class="column-3 column-4-side"></div>
+      <div class="column-3-right"></div>
+    </div>
+  </body>
+</html>
