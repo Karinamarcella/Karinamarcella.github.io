@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>latihan 3 layout</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;}
+
+        .outer{
+            position: relative;
+            width: 1200px;
+            height: 700px;
+            background-color: #efefef;
+            margin:10px auto;}
+        .border{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-color: #dedede;
+            float: left;}
+        .halfcol{
+            position: relative;
+            width: 46%;
+            height: 100%;
+            background-color: #bbb;
+            margin-right: 4%;
+            float: left;}
+        .halfcol:nth-child(even){margin: 0 0 0 4%;}
+        
+        .kotakatas{
+            position: relative;
+            width: 90%;
+            height: 10%;
+            background-color: yellowgreen;
+            margin-left: 6%;
+            float: left;}
+    
+        .tabelrute{
+            position: relative;
+            width: 75%;
+            height: 20%;
+            background-color: cadetblue;
+           margin: 80px 0 30% 20%;
+        }    
+
+         .header{
+            position: relative;
+            width: 60%;
+            height: 10px;
+            background-color: #bbb;
+            margin: 10% 10% 0 20%;
+        }
+   
+        .halfcontent{
+            position: relative;
+            width: 60%;
+            height: 400px;
+            background-color: seagreen;
+            margin: 35% 0 0 20%;
+            float: left;}
+
+        .bustimetable{
+            position: relative;
+            width: 288px;
+            height: 240px;
+            background-color: lightpink;
+            left: 30%;
+            top:3%;
+            padding: 2% 2% 0 2%;
+        }
+        .kuning1{
+            width: 100%;
+            height: 40px;
+            background-color: lightgoldenrodyellow 
+        }
+        .kuning2{
+            width: 100%;
+            height: 170px;
+            background-color: lightgoldenrodyellow;
+            margin-top: 10px
+        }
+        .fullservicepink{
+            position: relative;
+            width: 320px;
+            height: 120px;
+            background-color: lightpink;
+            top:5%;
+            padding: 2% 2% 0 2%;
+            right: 10%;
+            left: 25%;
+        }
+        .fullservicekun{
+            width: 100%;
+            height: 100px;
+            background-color: lightgoldenrodyellow;
+            margin-top: 10px;
+        }
+         .routes {
+            width: 100%;
+            height: 40%;
+            background-color: darkcyan;
+            margin-top: 40px;
+        }   
+
+    </style>
+    </head>
+    <body>
+        <div class="outer">
+            <div class="border">
+                <div class="halfcol">
+                    <div class="kotakatas"></div>
+                    <div class="halfcontent"></div>
+                    <div class="tabelrute"></div>
+                    <div class="header"></div>
+                </div>
+                <div class="halfcol">
+                    <div class="bustimetable">
+                        <div class="kuning1"></div>
+                        <div class="kuning2"></div>
+                    </div>
+                    <div class="fullservicepink">
+                        <div class="fullservicekun"></div> 
+                    </div>
+                    <div class="routes"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
